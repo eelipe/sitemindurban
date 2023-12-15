@@ -1,0 +1,373 @@
+body, h1, h2, h3, h4, h5, h6, ul, li, img, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+.site-header {
+  height:60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+  
+.container-menu {
+  width: 50%;
+  height: 100%;
+  margin-left:10% ;
+  display: flex;
+  flex-direction: row; 
+  justify-content:space-between;
+  align-items: center;
+
+}
+.Icones{
+  width: 7  ;
+  height: 100%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.container-menu .logo img {
+  max-width: 150px; 
+}
+
+.Icones .Perfil img{
+  max-width:30px;
+  margin-right: 2px;
+}
+
+.Icones .Carrinho img{
+  max-width:30px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.Icones .Atendimento img{
+  max-width: 30px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.divBusca{ 
+  background-color:#ffffff;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#txtBusca{
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size: 18px;
+  border:none;
+  width:450px;
+}
+#Btn-buscar{
+  border: none;
+  height: 18px;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(196, 196, 196) ;
+  height: 40px;
+}
+  
+nav ul li {
+  margin-right: 30px;  
+}
+  
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+}
+  
+nav ul li a:hover {
+  color: #919191;
+}
+/*INICIO DO CSS DO SLIDER*/
+section{
+  height: 200px;
+}
+.container-slider{
+  padding: 2rem;
+  margin-bottom: 10%;
+  
+}
+
+.slider{
+  position: relative; 
+  max-width: 48rem; /*forçara para ocupar espaço,e redimensionar dinamiamente para telas menores*/
+  margin: 0 auto; /*centralizar*/
+}
+
+
+.imagens{
+  display: flex;
+  aspect-ratio: 25 / 10 ; /*  proporçao - largura / altura  */
+  overflow-x: auto; /*ocultar as imagens q estao transbordando fora do conteiner*/
+  scroll-snap-type: x mandatory; /*para dar scroll nas imagens*/
+  scroll-behavior: smooth; /*rolagem suavizar*/
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0.25); /*sombra*/
+  border-radius: 0.5rem; /*arrendondar as bordas*/
+}
+
+.imagens img{
+  flex: 1 0 100%; 
+  scroll-snap-align: start; /*para ficar em cima*/
+  object-fit: cover; /*para ficar ocupando todo o espaço*/
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem; 
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; 
+}
+
+/*estilizar os botoes de navegaçao*/
+.slider-nav a {
+  width: 0.5rem; /*altura e largura dos botoes*/
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.75;
+  transition: opacity ease 250ms; /*efeito suave de transiçao de cor*/
+}
+
+.slider-nav a:hover{
+  opacity: 1;
+}
+
+::-webkit-scrollbar{
+  display: none; /*esconde barra de rolagem*/;
+}
+/*FIM DO CSS DO SLIDER*/
+#promocao{
+  margin-left: 35px;
+}
+
+#conteudo{
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  background-color: #F5F5F5;
+}
+
+#produto{
+  padding: 40px;
+}
+
+#produto img{
+  width: 200px;
+  height: 200px;
+  border: 2px solid gray;
+  border-radius: 20px;
+}
+
+#produto h3{
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif; 
+  font-size: 16px;
+  color: black;
+  width: 200px;
+}
+
+#produto p {
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif; 
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 3px;
+  width: 200px;
+}
+
+#adicionar {
+  width: 180px;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(42, 42, 42);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif; 
+}
+
+#adicionar:hover{
+  background-color: rgb(66,66,66);
+}
+
+
+footer{
+  width: 100%;
+  min-height: 250px;
+  background-color: #efefef;
+  display:flex;
+  position: relative;
+  margin-top:100px;
+  bottom: 0;
+  padding: 20px;
+}
+footer .container{
+  width: 320px;
+  min-height:150px ;
+  padding: 20px;
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+footer .container:nth-child(4){
+  width: 400px;
+}
+.container ul li {
+  margin:10px 0px;
+  list-style: none;
+}
+.container ul li a{
+  text-decoration: none;
+  color: black;
+}
+.container ul li a:hover{
+  color:gray;
+}
+#input_group input{
+  width:100%;
+  max-width:200px;
+  border-radius: 3px;
+  border: 0px #efefef;
+  height:30px;
+  margin-bottom: 10px;
+}
+div.input_group{
+  width: 100%;
+  margin: 30px 0;
+}
+div.input_group{
+  font-size:16px;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  color:#efefef;
+  cursor: text;
+  transition: 0.5s ease-in-out;
+}
+div.input_group .input{
+  padding:5px;
+  color:rgb(150,150,150);
+  border: 0;
+  border-bottom: 2px solid #efefef;
+}
+.footer_pagamentos a{
+  color:black;
+  display: inline-flex;
+  background:#efefef;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin: 0;
+  border-radius: 20px;
+  text-decoration: none;
+  justify-content: center;
+  transition: 0.4s;
+  font-size: 24px;
+}
+.footer_social_midia a{
+  color:black;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  background:#efefef;
+  padding: 0px;
+  margin: 0;
+  border-radius:20px;
+  text-decoration: none;
+  justify-content:center;
+  transition: 0.4s;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    flex-direction: column;
+  }
+  .logo{
+    text-align: center;
+  }
+  .site-header{
+    height: 150px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #conteudo{
+    flex-direction: column;
+    vertical-align: middle;
+  }
+  .container-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .divBusca{
+    padding: 0px;
+    align-items: center;
+  }
+}
+
+@media(max-width: 800px) {
+  footer{
+    flex-direction: column;
+  }
+  footer .container{
+  width: 100%;
+  text-align: center;
+}
+  footer .container:nth-child(4){
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width: 426px) {
+  .container #conteudo{
+      grid-template-columns: repeat(1, 1fr);
+      padding: 20px;
+  }
+}
+
+::-webkit-scrollbar{
+display: none;
+}
+
+
+
+

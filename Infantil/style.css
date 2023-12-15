@@ -1,0 +1,275 @@
+body, h1, h2, h3, h4, h5, h6, ul, li, img, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  .site-header {
+    height:60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+  }
+    
+  .container-menu {
+    width: 50%;
+    height: 100%;
+    margin-left:10% ;
+    display: flex;
+    flex-direction: row; 
+    justify-content:space-between;
+    align-items: center;
+  
+  }
+  .Icones{
+    width: 7%;
+    height: 100%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+    
+  .container-menu .logo img {
+    max-width: 150px; 
+  }
+  
+  .Icones .Perfil img{
+    max-width:30px;
+  }
+  
+  .Icones .Carrinho img{
+    max-width:30px;
+  }
+  .Icones .Atendimento img{
+    max-width: 30px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .divBusca{ 
+    background-color:#ffffff;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  #txtBusca{
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size: 18px;
+    border:none;
+    height:32px;
+    width:450px;
+  }
+  #Btn-buscar{
+    border: none;
+    height: 16px;
+    padding-right: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(196, 196, 196) ;
+    height: 40px;
+  }
+    
+  nav ul li {
+    margin-right: 30px;  
+  }
+    
+  nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+    
+  nav ul li a:hover {
+    color: #919191;
+  }
+  
+  #conteudo{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+  }
+  
+  #produto{
+    padding: 40px;
+  }
+  
+  #produto img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid gray;
+    border-radius: 20px;
+  }
+  
+  #produto h3{
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px;
+    color: black;
+    width: 200px;
+  }
+  
+  #produto p {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 3px;
+    width: 200px;
+  }
+  
+  #adicionar {
+    width: 180px;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(42, 42, 42);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+  #adicionar:hover{
+    background-color: rgb(66,66,66);
+  }
+
+  footer{
+    width: 100%;
+    min-height: 250px;
+    background-color: #efefef;
+    display:flex;
+    position: relative;
+    bottom: 0;
+    padding: 0px;
+  }
+  footer .container{
+    width: 320px;
+    min-height:150px ;
+    padding: 20px;
+    
+  }
+  footer .container:nth-child(4){
+    width: 400px;
+  }
+  .container ul li {
+    margin:10px 0px;
+    list-style: none;
+  }
+  .container ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  .container ul li a:hover{
+    color:gray;
+  }
+  #input_group input{
+    width:100%;
+    max-width:200px;
+    border-radius: 3px;
+    border: 0px #efefef;
+    height:30px;
+    margin-bottom: 10px;
+  }
+  div.input_group{
+    width: 100%;
+    margin: 30px 0;
+  }
+  div.input_group{
+    font-size:16px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color:#efefef;
+    cursor: text;
+    transition: 0.5s ease-in-out;
+  }
+  div.input_group .input{
+    padding:5px;
+    color:rgb(150,150,150);
+    border: 0;
+    border-bottom: 2px solid #efefef;
+  }
+  .footer_pagamentos a{
+    color:black;
+    display: inline-flex;
+    background:#efefef;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    margin: 0;
+    border-radius: 20px;
+    text-decoration: none;
+    justify-content: center;
+    transition: 0.4s;
+    font-size: 24px;
+  }
+  .footer_social_midia a{
+    color:black;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background:#efefef;
+    padding: 2px;
+    margin: 0;
+    border-radius:20px;
+    text-decoration: none;
+    justify-content:center;
+    transition: 0.4s;
+    font-size: 24px;
+  }
+  
+  
+  
+  
+  
+  
+  @media(max-width: 950px) {
+      footer{
+        flex-direction: column;
+      }
+    footer .container{
+      width: 100%;
+      text-align: center;
+    }
+    footer .container:nth-child(4){
+      width: 100%;
+    }
+  
+  }
+  
+  @media screen and (max-width: 426px) {
+      .container {
+          grid-template-columns: repeat(1, 1fr);
+          padding: 20px;
+      }
+  }
+  
+  ::-webkit-scrollbar{
+    display: none;
+  }
